@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: bisque;
+                font-family: cursive;
+            }
+            .mark-form{
+                margin-top: 10px;
+            }
+            #marklabel{
+                font-size: 24px;
+            }
+            #submitbutton{
+                padding: 15px;
+                border-radius: 30px;
+                background-color:crimson;
+            }
+            .mark-form input[type="number"] {
+                padding: 10px;
+                border: 1px solid #dddddd;
+                margin-bottom: 15px;
+                box-sizing:border-box;
+                color: red;
+                font-size: 17px;
+                border: 2px solid black;
+            }
+        </style>
+        <title>Attendance</title>
+    </head>
+
+    <body>
+        <center>
+        <div class="mark-form">
+            <h1>Give Student Attendance</h1>
+            <form action="giveAttendance" method="POST">
+                <label id="marklabel">Attendance</label>
+                <input type="text" placeholder="Present or Absent" name="attendance" required><br><br>
+                <input id="submitbutton" type="submit" value="Submit">
+            </form>
+        </div>
+        </center>
+    </body>
+</html>
